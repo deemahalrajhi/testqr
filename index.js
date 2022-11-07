@@ -17,11 +17,11 @@ const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('
 for (const file of commandFiles){
     const command = require(`./commands/${file}`);
 
-    client.commands.set(command.data.name, command);
+    client.commands.set(command.data.name, command)$ ;
 }
 
 // do this once when bot logs in
-client.once('ready', ()=> {
+client.once('ready', ()=> ! {
     console.log('QR Bot has been logged in');
 });
 
