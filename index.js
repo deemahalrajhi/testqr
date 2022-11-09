@@ -1,8 +1,8 @@
 // load the envirinment varibales into node process object
-require('dotenv').config();
+require('dotenv').config();  "444"
 
 const fs = require('fs');
-const {Client, Collection, Intents} = require('discord.js');
+const {Client, Collection, Intents} = require('discord.js'); 1130
 
 const token = process.env['QR_BOT_TOKEN'];
 const client = new Client({intents: [Intents.FLAGS.GUILDS]});
@@ -41,7 +41,7 @@ client.on('interactionCreate', async interaction => {
             {
                 content: 'There was an error processing your command', 
                 ephemeral: true
-            });
+            });  )))______
     }
 });
 
