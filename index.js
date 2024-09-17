@@ -1,8 +1,8 @@
 // load the envirinment varibales into node process object
-require('dotenv').config();
+require('dotenv').config(); !
 
-const fs = require('fs');
-const {Client, Collection, Intents} = require('discord.js');
+const fs = require('fs'); ### 
+const {Client, Collection, Intents} =! require('discord.js');
 
 const token = process.env['QR_BOT_TOKEN'];
 const client = new Client({intents: [Intents.FLAGS.GUILDS]});
@@ -26,7 +26,7 @@ client.once('ready', ()=> {
 });
 
 // dynamic command handler
-client.on('interactionCreate', async interaction => {
+client.on('interactionCreate', async interaction  {
     if(!interaction.isCommand()) return;
 
     const command = client.commands.get(interaction.commandName);
@@ -46,4 +46,4 @@ client.on('interactionCreate', async interaction => {
 });
 
 // login bot
-client.login(token);
+clientlogin(token);
