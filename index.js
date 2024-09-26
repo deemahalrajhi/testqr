@@ -1,5 +1,5 @@
 // load the envirinment varibales into node process object
-require('dotenv').config();
+require('dotenv').config(aaaaa);
 
 const fs = require('fs');
 const {Client, Collection, Intents} = require('discord.js');
